@@ -1,0 +1,84 @@
+Erros 
+- Erros de Sintaxe 
+- Erros de Semântica
+- Erros em Tempo de Execução 
+
+
+Erro01.java:5: error: unclosed string literal
+        System.out.println("Hello World)
+                           ^
+1 error
+
+--------------------------------
+
+Erro01.java:5: error: ';' expected
+        System.out.println("Hello World")
+                                         ^
+1 error
+
+--------------------------------
+
+loacir@loacir-X451CAP:~/Documentos/Exercicios-Java/aula07$ javac Erro02.java
+Erro02.java:4: error: not a statement
+        var int cont;
+        ^
+Erro02.java:4: error: ';' expected
+        var int cont;
+           ^
+2 errors
+
+--------------------------------
+
+loacir@loacir-X451CAP:~/Documentos/Exercicios-Java/aula07$ javac Erro02.java
+Erro02.java:5: error: variable cont might not have been initialized
+        System.out.println("Vocês digitou: " + cont);
+                                               ^
+1 error
+
+
+--------------------------------
+
+Erro: o método main não foi encontrado na classe Erro03; defina o método main como:
+   public static void main(String[] args)
+ou uma classe de aplicativo JavaFX deve expandir javafx.application.Application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
