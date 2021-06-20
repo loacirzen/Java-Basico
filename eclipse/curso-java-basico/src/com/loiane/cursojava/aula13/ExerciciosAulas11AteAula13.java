@@ -1,6 +1,7 @@
 package com.loiane.cursojava.aula13;
 
 import java.util.Scanner;
+import java.math.*;
 
 public class ExerciciosAulas11AteAula13 {
 	
@@ -71,6 +72,78 @@ public class ExerciciosAulas11AteAula13 {
 		System.out.println("-------------------------");
 		
 		System.out.println("Exercicio 09");
+		System.out.println("Digite o em Farenheit: ");
+		double farenheit = scan.nextDouble();
+		double celsius = ( 5 * (farenheit - 32)/9);
+		System.out.println("A temperatura em Celsius é: " + celsius);
+		System.out.println("-------------------------");
+		
+		System.out.println("Exercicio 10");
+		System.out.println("Digite o em Celsius: ");
+		double c = scan.nextDouble();
+		double f = (c * 1.8) + 32; 
+		System.out.println("A temperatura em Farenheit é: " + f);
+		System.out.println("-------------------------");
+		
+		System.out.println("Exercicio 11");
+		System.out.println("Digite um número inteiro: ");
+		int inteiro1 = scan.nextInt();
+		System.out.println("Digire outro número inteiro: ");
+		int inteiro2 = scan.nextInt();
+		System.out.println("Digite um número real");
+		double real = scan.nextDouble();
+		
+		double resultado1 = (inteiro1 * 2) % (inteiro2 / 2);
+		System.out.println("O produto do dobro do primeiro com metada do segundo: " + resultado1);
+		
+		double resultado2 = (inteiro1 * 3) + real;
+		System.out.println("a soma do triplo com o terceiro: " + resultado2);
+		
+		double resultado3 = Math.pow(real, 3); 
+		System.out.println("O terceiro elevado ao cubo:" + resultado3);
+		System.out.println("-------------------------");
+		
+		
+		System.out.println("Exercicio 12");
+		System.out.println("Digite sua altura: ");
+		double suaAltura = scan.nextDouble();
+		double pesoIdeal = (76.7 * suaAltura) - 58;
+		System.out.println("Seu peso ideal é: " + pesoIdeal);
+		System.out.println("-------------------------");
+		
+		
+		System.out.println("Exercicio 13");
+		System.out.println("Digite a quantidade quanto você ganha por hora: ");
+		qtdValorHora = scan.nextDouble();
+		System.out.println("Digite a quantidade de horas trabalhada no mês");
+		qtdHorasMes = scan.nextDouble();
+		salarioMes = qtdHorasMes * qtdValorHora;
+		System.out.println("Seu salario no mês será: " + salarioMes);
+		double ir = (salarioMes * 11) / 100;
+		double inss = (salarioMes * 8) / 100;
+		double sindicato = (salarioMes * 5) / 100;
+		double salarioLiquido = salarioMes - ir - inss - sindicato;
+		System.out.println("O salario liquido é: " + salarioLiquido);
+		System.out.println("-------------------------");
+		
+		
+		System.out.println("Exercicio 14");
+		System.out.println("Digite o tamanho do arquivo em MB");
+		double mb = scan.nextDouble();
+		System.out.println("Digite a velocidade da sua Internet");
+		double velocidade = scan.nextDouble();
+		double calculoTempo = ((mb * 1024) / velocidade) / 60; 
+		System.out.println("O tempo estimado é de: " + calculoTempo);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
