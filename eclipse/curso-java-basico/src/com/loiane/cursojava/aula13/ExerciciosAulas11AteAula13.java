@@ -68,7 +68,9 @@ public class ExerciciosAulas11AteAula13 {
 		double qtdHorasMes = scan.nextDouble();
 		double salarioMes = qtdHorasMes * qtdValorHora;
 		System.out.println("Seu salario no mês será: " + salarioMes);
+		System.out.println("-------------------------");
 		
+		System.out.println("Exercicio 09");
 		
 		
 		
