@@ -1,4 +1,4 @@
-package com.loiane.cursojava.aula13labs;
+package com.loiane.cursojava.aula13.labs;
 
 public class Exercicio01 {
 

@@ -1,4 +1,4 @@
-package com.loiane.cursojava.aula13labs;
+package com.loiane.cursojava.aula13.labs;
 
 import java.util.Scanner;
 import java.math.*;

@@ -1,4 +1,4 @@
-package com.loiane.cursojava.aula13labs;
+package com.loiane.cursojava.aula13.labs;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class Exercicio11 {
 		System.out.println("Digite um número real");
 		double real = scan.nextDouble();
 		
-		double resultado1 = (inteiro1 * 2) % (inteiro2 / 2);
+		double resultado1 = (inteiro1 * 2) * (inteiro2 / 2);
 		System.out.println("O produto do dobro do primeiro com metada do segundo: " + resultado1);
 		
 		double resultado2 = (inteiro1 * 3) + real;

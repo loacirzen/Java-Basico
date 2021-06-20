@@ -1,4 +1,4 @@
-package com.loiane.cursojava.aula13labs;
+package com.loiane.cursojava.aula13.labs;
 
 import java.util.Scanner;
 
@@ -10,10 +10,10 @@ public class Exercicio14 {
 		
 		System.out.println("Exercicio 14");
 		System.out.println("Digite o tamanho do arquivo em MB");
-		double mb = scan.nextDouble();
+		double tamanhoArquivo = scan.nextDouble();
 		System.out.println("Digite a velocidade da sua Internet");
-		double velocidade = scan.nextDouble();
-		double calculoTempo = ((mb * 1024) / velocidade) / 60; 
+		double velocidadeInternet = scan.nextDouble();
+		double calculoTempo = tamanhoArquivo / velocidadeInternet; 
 		System.out.println("O tempo estimado é de: " + calculoTempo);
 
 	}
