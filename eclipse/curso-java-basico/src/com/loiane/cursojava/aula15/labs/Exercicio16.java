@@ -19,19 +19,19 @@ public class Exercicio16 {
 			System.out.println("Digite o valor C: ");
 			double valorC = scan.nextDouble();
 			
-			double delta = (Math.pow(valorB, 2)) - 4 * valorA * valorC;
+			double delta = (Math.pow(valorB, 2)) - (4 * valorA * valorC);
 			double resultaEquacao;
 			
 			if (delta < 0) {
 				System.out.println("A equação não possui raizes reais");
 			} else if (delta == 0) {
-				resultaEquacao = -(valorB) / (2 * valorA);
+				resultaEquacao = ((-valorB)) / (2 * valorA);
 				System.out.println("A equação possui apenas uma raiz real: " + resultaEquacao);
 			} else {
 				System.out.println("A equação possui duas raizes reais são elas: ");
-				resultaEquacao = -(valorB) + (Math.sqrt(delta)) / (2 * valorA);
+				resultaEquacao = ((-valorB)) + (Math.sqrt(delta)) / (2 * valorA);
 				System.out.println("Valor de x' : " + resultaEquacao);
-				resultaEquacao = -(valorB) - (Math.sqrt(delta)) / (2 * valorA);
+				resultaEquacao = ((-valorB)) - (Math.sqrt(delta)) / (2 * valorA);
 				System.out.println("Valor de x'' : " + resultaEquacao);
 			}
 			

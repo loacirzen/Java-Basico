@@ -8,17 +8,12 @@ public class Exercicio04 {
 		Scanner scan = new Scanner (System.in);
 		System.out.println("Digite uma letra: ");
 		String letra = scan.next();
-		switch(letra) {
+		switch(letra.toUpperCase()) {
 		case "A" :
 		case "E" :
 		case "I" :
 		case "O" :
-		case "U" :	
-		case "a" :
-		case "e" :
-		case "i" :
-		case "o" :
-		case "u" : System.out.println("A letra digitada é uma Vogal");break;
+		case "U" : System.out.println("A letra digitada é uma Vogal");break;
 		default : System.out.println("A letra digitada é uma Consoante");
 		}
 
