@@ -13,12 +13,10 @@ public class Exercicio18 {
 		do {
 			if((num % cont == 0) && (num % 1 == 0)) {
 				contPrimo++;
-				System.out.println(cont);
 			}
 			cont--;
 		}while(cont > 0);
 		
-		System.out.println(contPrimo);
 		if(contPrimo >= 3) {
 			System.out.println("O número não é primo");
 		}else {
