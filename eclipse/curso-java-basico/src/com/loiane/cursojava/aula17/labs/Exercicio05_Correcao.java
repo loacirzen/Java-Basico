@@ -1,7 +1,5 @@
 package com.loiane.cursojava.aula17.labs;
-
 import java.util.Scanner;
-
 public class Exercicio05_Correcao {
 
 	public static void main(String[] args) {
@@ -63,8 +61,7 @@ public class Exercicio05_Correcao {
 			}
 			
 		}while(!valido);
-	
-	
+		
 		int cont = 0;
 		
 		while(popA < popB ) {
@@ -77,7 +74,5 @@ public class Exercicio05_Correcao {
 		System.out.println("População A: " + popA);
 		System.out.println("População B: " + popB);
 		System.out.println("Quantidade de anos: " + cont);
-
 	}
-
 }
