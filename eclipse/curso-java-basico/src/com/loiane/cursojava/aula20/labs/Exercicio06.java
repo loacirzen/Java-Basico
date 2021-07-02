@@ -11,6 +11,7 @@ public class Exercicio06 {
 		String jogadorTwo = "";
 		String jogadorDaVez = jogadorOne;
 		boolean fimDePartida = false;
+		boolean jogada = true;
 		int linha = 0, coluna = 0;
 		
 		do {
@@ -47,15 +48,34 @@ public class Exercicio06 {
 			System.out.println();
 		}
 		
+		do {
+			
+			jogada = true;
+			
+			do {
+			
+				System.out.println("Favor Jogador "+ jogadorDaVez + " informar uma posição ");
+				System.out.print("Informe a linha: ");
+				linha = scan.nextInt();
+				System.out.print("Informe a coluna: ");
+				coluna = scan.nextInt();
+				
+			if((linha < 0 || linha > 2) || (coluna < 0 || coluna > 2)) {
+				System.out.println("Posição Inválida informe valores de 0 até 2");
+			}	
 		
-		System.out.println("Favor Jogador "+ jogadorDaVez + " informar uma posição ");
-		System.out.print("Informe a linha: ");
-		linha = scan.nextInt();
-		System.out.print("Informe a coluna: ");
-		coluna = scan.nextInt();
+			}while((linha < 0 || linha > 2) || (coluna < 0 || coluna > 2));
 		
-		jogoDaVelha[linha][coluna] = jogadorDaVez;
-
+		if(jogoDaVelha[linha][coluna] == null) {
+			jogoDaVelha[linha][coluna] = jogadorDaVez;
+		}else {
+			System.out.println("Essa posição já está ocupada");
+			jogada = false;
+		}
+		
+		}while((jogoDaVelha[linha][coluna] == null) || (linha < 0 || linha > 2) || (coluna < 0 || coluna > 2));
+		
+		
 		for(int i = 0 ; i<jogoDaVelha.length; i++) {
 			for(int j = 0; j<jogoDaVelha[i].length; j++) {
 			     if ((jogoDaVelha[0][0] == jogoDaVelha[0][1]) && (jogoDaVelha[0][0] != null) && 
@@ -83,13 +103,16 @@ public class Exercicio06 {
 		                    (jogoDaVelha[1][1] == jogoDaVelha[2][0]) && (jogoDaVelha[2][0] != null)){
 							fimDePartida = true;
 				} else {
-					if (jogadorDaVez.equalsIgnoreCase(jogadorTwo)) {
-						jogadorDaVez = jogadorOne;
-					} else {
-						jogadorDaVez = jogadorTwo;
+					if(jogada == true) {
+						if (jogadorDaVez.equalsIgnoreCase(jogadorTwo)) {
+							jogadorDaVez = jogadorOne;
+						} else {
+							jogadorDaVez = jogadorTwo;
+						}
+					}else if (jogada == false) {
+						jogadorDaVez = jogadorDaVez;
 					}
 				}
-			
 			}
 		}
 		
