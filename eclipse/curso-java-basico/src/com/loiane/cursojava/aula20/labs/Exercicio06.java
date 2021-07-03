@@ -49,7 +49,6 @@ public class Exercicio06 {
 		}
 		
 		do {
-			
 			jogada = true;
 			
 			do {
@@ -60,18 +59,18 @@ public class Exercicio06 {
 				System.out.print("Informe a coluna: ");
 				coluna = scan.nextInt();
 				
-			if((linha < 0 || linha > 2) || (coluna < 0 || coluna > 2)) {
-				System.out.println("Posição Inválida informe valores de 0 até 2");
-			}	
+				if((linha < 0 || linha > 2) || (coluna < 0 || coluna > 2)) {
+					System.out.println("Posição Inválida informe valores de 0 até 2");
+				}	
 		
 			}while((linha < 0 || linha > 2) || (coluna < 0 || coluna > 2));
 		
-		if(jogoDaVelha[linha][coluna] == null) {
-			jogoDaVelha[linha][coluna] = jogadorDaVez;
-		}else {
-			System.out.println("Essa posição já está ocupada");
-			jogada = false;
-		}
+			if(jogoDaVelha[linha][coluna] == null) {
+				jogoDaVelha[linha][coluna] = jogadorDaVez;
+			}else {
+				System.out.println("Essa posição já está ocupada");
+				jogada = false;
+			}
 		
 		}while((jogoDaVelha[linha][coluna] == null) || (linha < 0 || linha > 2) || (coluna < 0 || coluna > 2));
 		
