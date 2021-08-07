@@ -1,4 +1,4 @@
-package com.loiane.cursojava.aula32;
+package com.loiane.cursojava.aula33;
 
 public class MinhaCalculadora {
 	
@@ -14,5 +14,13 @@ public class MinhaCalculadora {
 		return num1 + num2 + num3;
 	}
 	
+	public int soma(int[] vetorInteiros) {
+		int total = 0;
+		for(int i=0; i < vetorInteiros.length; i++) {
+			total += vetorInteiros[i];
+		}
+		
+		return total;
+	}
 
 }
