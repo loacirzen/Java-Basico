@@ -32,4 +32,13 @@ public class Calculadora {
 		return fat;
 		
 	}
+	
+	public static int fatorialLoiane(int num1) {
+		
+		if (num1 == 0) {
+			return 1;
+		}
+		
+		return num1 * fatorialLoiane(num1 - 1);
+	}
 }
